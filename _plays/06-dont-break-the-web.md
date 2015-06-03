@@ -1,6 +1,6 @@
 ---
-id: 8
-title: Tribes
+id: 6
+title: Don't break the web
 ---
 
 - Don't break the web / work with the web's grain
@@ -23,3 +23,7 @@ L - load time (<1 sec)
 - Engagement
 
 #### key questions
+
+
+#### Further reading 
+- [Outdated UX patterns](http://sideproject.io/outdated-ux-patterns/) 

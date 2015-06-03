@@ -1,6 +1,6 @@
 ---
-id: 8
-title: Tribes
+id: 9
+title: Material exploration
 ---
 
 material exploration - http://infovore.org/archives/2011/08/22/technology-as-a-material/
