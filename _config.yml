@@ -1,0 +1,10 @@
+permalink: pretty
+markdown: rdiscount
+highlighter: pygments
+
+collections:
+  - plays
+
+sass:
+  sass_dir:          _scss
+  style:            :compressed
