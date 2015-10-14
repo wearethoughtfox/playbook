@@ -1,6 +1,6 @@
 
 // Colors
-$atlantic_blue:       #00ff00;
+$atlantic_blue:       #B6B6B6;
 $pacific_blue:        #0000ff;
 $miami_vice_blue:     #000;
 $white:               #fff;
@@ -9,8 +9,8 @@ $gray:                #4D4D4D;
 $background_white:    #fff;
 
 // Fonts
-$serif:               'Merriweather', Georgia, serif;
-$sans-serif:          'Open Sans', sans-serif;
+$serif:               Georgia, serif;
+$sans-serif:          sans-serif;
 
 // Mobile Breakpoints
 $mobile: new-breakpoint(min-width 0px max-width 640px 4);
@@ -22,6 +22,7 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
     font-family: $serif;
     margin: 0;
     line-height: 28px;
+    font-size: 18px;
   }
 
   a {
@@ -80,6 +81,8 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
   h3 {
     font-family: $sans-serif;
     font-size: 18px;
+    clear: left;
+    margin: 0;
   }
 
   h4 {
@@ -99,6 +102,11 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
 
   p {
     color: $black;
+  }
+
+  blockquote {
+    color: $gray;
+    border-left: 0.25rem solid $gray;
   }
 
   .outer_container {
@@ -128,7 +136,7 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
   .button {
     font-size: inherit;
     font-family: $sans-serif;
-    display: inline-block;  
+    display: inline-block;
     margin-top: 40px;
     margin-right: 20px;
     a {
@@ -236,7 +244,7 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
       float: right;
       display: inline;
       padding: 0;
-      list-style-position: outside;
+      list-style-position: inside;
     }
 
     .active {
@@ -261,7 +269,6 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
         font-family: $serif;
         font-weight: lighter;
         color: $white;
-        border: 1px solid $pacific_blue;
       }
       a:hover {
         background: $miami_vice_blue;
@@ -303,7 +310,7 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
     }
 
     @include media($slimmer) {
-      ul { 
+      ul {
         display: none;
       }
       #menu_icon {
@@ -319,7 +326,7 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
     visibility: visible;
     display: block;
     height: 60px;
-    
+
     @include media($mobile) {
       height: 48px;
       visibility: visible;
@@ -333,13 +340,13 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
     padding-bottom: 60px;
 
 
-    h3 { 
+    h3 {
       color: $white;
       font-size: 23px;
       font-weight: normal;
       margin-bottom: 38px;
     }
-    
+
     .columns {
       -moz-column-count: 2;
       -moz-column-gap: 20px;
@@ -351,8 +358,7 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
 
     ol {
       list-style-position: inside;
-      padding-left: 0px;
-      margin-top: 0px;
+      padding-left: 0;
 
       a {
         vertical-align: top;
@@ -363,17 +369,16 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
       }
 
       a:hover {
-        color: $black;
+        color: white;
       }
     }
-    
+
     ol, li {
       color: $white;
       font-size: 20px;
       font-weight: lighter;
-      margin-top: 0;
     }
-    
+
     .button {
       a {
         color: white;
@@ -443,22 +448,22 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
     ol, ul {
       @include span-columns(8);
       list-style-position: outside;
-      padding-left: 25px;
+      padding-left: 0;
     }
 
     ol {
-      list-style-image: url("../images/bullet-sq.svg");
       margin-top: 0px;
     }
 
     li {
-      font-size: 15px;
+      font-size: 18px;
       line-height: 25px;
       padding-left: 5px;
     }
 
     ul {
-      list-style-image: url("../images/bullet-circle.svg");
+      list-style-type: disc;
+      list-style-position: outside;
     }
 
     a {
@@ -547,7 +552,7 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
   ol, ul {
     width: 80%;
   }
-  
+
   ol {
     list-style-type: square;
   }
